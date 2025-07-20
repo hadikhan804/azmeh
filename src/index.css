@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer components {
+  .sidebar-link {
+    @apply flex items-center px-4 py-3 text-gray-700 hover:bg-alonox-yellow hover:text-alonox-green-dark transition-colors duration-200 rounded-lg;
+  }
+  
+  .sidebar-link.active {
+    @apply bg-alonox-yellow text-alonox-green-dark font-medium;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6;
+  }
+  
+  .btn-primary {
+    @apply bg-alonox-green hover:bg-alonox-green-dark text-white px-4 py-2 rounded-lg transition-colors duration-200 font-medium;
+  }
+  
+  .btn-secondary {
+    @apply bg-alonox-yellow hover:bg-alonox-yellow-dark text-alonox-green-dark px-4 py-2 rounded-lg transition-colors duration-200 font-medium;
+  }
+  
+  .btn-danger {
+    @apply bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg transition-colors duration-200 font-medium;
+  }
+} 
